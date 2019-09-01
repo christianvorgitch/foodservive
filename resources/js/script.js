@@ -87,17 +87,27 @@ $('a[href*="#"]')
        offset: '70%' 
     });
     
+    /* mobile nav */
+
+$('.js--nav-icon').click(function(){
+    var nav = $('.js--main-nav');
+    var icon = $('.js--nav-icon i');
+    
+    nav.slideToggle(200);
+    
+    
+    
+    });
+    
     
 });
 
- $('.js--nav-icon').click(function(){
-       var nav = $('.js--main-nav');
-       var icon = $('.js--nav-icon ion-icon');
-       nav.slideToggle(200);
-        
-       if(icon.hasClass('hide')){
-          icon.toggleClass('hide')
-       } 
-        
-        
-    });
+
+
+
+
+
+
+
+
+
